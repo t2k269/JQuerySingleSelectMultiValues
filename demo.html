@@ -1,0 +1,77 @@
+<html>
+<head>
+<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="js/jquery-ssmv-1.0.1.js"></script>
+<link rel=stylesheet type="text/css" href="css/jquery-ssmv-1.0.1.css"/> 
+<script type="text/javascript">
+$(document).ready(function() {
+	$("#selectlist1").singleSelectMultiValues({
+		text: "Test A",
+		boxesContainer: $("#boxescontainer")
+	});
+	$("#selectlist2").singleSelectMultiValues({
+		text: "Test B",
+		boxesContainer: $("#boxescontainer")
+	});
+	$("#selectlist3").singleSelectMultiValues({
+		text: "Test C",
+		boxesContainer: $("#boxescontainer")
+	});
+	$("#selectlist1").change(function() {
+		console.log($(this).val());
+	});
+	$("#selectlist2").change(function() {
+		console.log($(this).val());
+	});
+	$("#selectlist3").change(function() {
+		console.log($(this).val());
+	});
+});
+</script>
+<style>
+body {
+	font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+}
+select {
+	content: "Industry";
+	padding: 9px 6px 9px 6px;
+	width: 120px;
+	color: #555555;
+	cursor: pointer;
+	overflow: visible;
+	font-size: 14px;
+	background-color: white;
+	margin: 0px;
+	align-items: center;
+	white-space: pre;
+	-webkit-appearance: none;
+	border: 1px solid #e3e4e5;
+	max-width: 100%;
+	border-radius: 0;
+	background: url(form_dropdowns.svg) no-repeat right -45px;
+}
+</style>
+</head>
+<body>
+<select multiple="on" id="selectlist1">
+  <option value="1">aaaaaaa</option>
+  <option value="2">bbbbbbb</option>
+  <option value="3">ccccccccd</option>
+  <option value="4">dddddddd</option>
+</select>
+<select multiple="on" id="selectlist2">
+  <option value="1">aaaaaaa</option>
+  <option value="2">bbbbbbb</option>
+  <option value="3">ccccccccd</option>
+  <option value="4">dddddddd</option>
+</select>
+<select multiple="on" id="selectlist3">
+  <option value="1">aaaaaaa</option>
+  <option value="2">bbbbbbb</option>
+  <option value="3">ccccccccd</option>
+  <option value="4">dddddddd</option>
+</select>
+<hr/>
+<div id="boxescontainer"></div>
+</body>
+</html>

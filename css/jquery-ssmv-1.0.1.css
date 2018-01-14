@@ -1,0 +1,30 @@
+.ssmv_container {
+	width: 100%;
+	display:inline-block;
+}
+.ssmv_label {
+	float: left;
+}
+.ssmv_boxes {
+	float: left;
+}
+.ssmv_box {
+	float: left;
+	display: inline-block;
+	font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	color: white;
+	margin-right: 8px;
+}
+.ssmv_box_text {
+	float: left;
+	background-color: #AAAAAA;
+	padding: 2px 5px 2px 5px;
+}
+.ssmv_box_remove {
+	float: left;
+	margin-left: 4px;
+	background-color: #AAAAAA;
+	padding: 7px 7px 7px 7px;
+}
