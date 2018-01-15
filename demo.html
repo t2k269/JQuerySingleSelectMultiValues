@@ -26,6 +26,11 @@ $(document).ready(function() {
 	$("#selectlist3").change(function() {
 		console.log($(this).val());
 	});
+	$("#resetFilters").click(function() {
+		$("#selectlist1").val([]);
+		$("#selectlist2").val([]);
+		$("#selectlist3").val([]);
+	});
 });
 </script>
 <style>
@@ -71,7 +76,7 @@ select {
   <option value="3">ccccccccd</option>
   <option value="4">dddddddd</option>
 </select>
-<hr/>
+<button id="resetFilters">Reset Filters</button>
 <div id="boxescontainer"></div>
 </body>
 </html>
