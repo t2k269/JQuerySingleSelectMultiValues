@@ -48,7 +48,7 @@
 			}
 			
 			var arr = instance.val();
-			var idx = arr.indexOf(v);
+			var idx = arr == null ? -1 : arr.indexOf(v);
 			if (idx < 0) {
 				var closeBtn = $("<a></a>").addClass(options.boxRemoveClass)
 					.append($('<svg height="10" stroke="currentColor" stroke-miterlimit="10" stroke-width="1.5" viewBox="0 0 10 10" width="10"> <line x1="0" x2="10" y1="0" y2="10"></line><line x1="0" x2="10" y1="10" y2="0"></line></svg>'));
